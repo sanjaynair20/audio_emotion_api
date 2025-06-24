@@ -1,3 +1,6 @@
+# Install ffmpeg
+RUN apt-get update && apt-get install -y ffmpeg
+
 # Use official Python 3.10 slim image to avoid version conflicts
 FROM python:3.10-slim
 
