@@ -1,8 +1,6 @@
 services:
   - type: web
-    name: audio-emotion-api
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    pythonVersion: 3.10
+    pythonVersion: 3.10.9
+    env:
+      - name: PYTHONUNBUFFERED
+        value: 1
