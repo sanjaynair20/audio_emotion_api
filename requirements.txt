@@ -3,5 +3,5 @@ tensorflow==2.10.0
 librosa==0.10.0.post2
 scikit-learn
 pydub
-numpy
+numpy==1.23.5
 gunicorn
