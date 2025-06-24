@@ -1,2 +1,11 @@
-python:
-  version: 3.10.9
+previewsEnabled: true
+services:
+  - type: web
+    plan: standard
+    name: app
+    env: python
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.5
+      - key: my_env
+        value: 27bed0121b936f977122d02fa7a45c7d
