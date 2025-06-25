@@ -67,5 +67,6 @@ def predict():
 
 # Start the app (only needed if using `python app.py`)
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    port = int(os.environ.get("PORT", 5000))  # Render assigns a PORT env var
+    app.run(host="0.0.0.0", port=port)
 
