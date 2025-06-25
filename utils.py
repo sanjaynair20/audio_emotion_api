@@ -3,7 +3,7 @@ import librosa
 import numpy as np
 
 def extract_features(file_path, max_len=128):
-    audio, sr = librosa.load(file_path, sr=None, duration=3.0)
+    audio, sr = librosa.load(file_path, sr=16000, duration=3.0)
     print(f"Loaded audio length: {audio.shape[0]} samples at {sr} Hz")  # Debug
     
     mel_spec = librosa.feature.melspectrogram(y=audio, sr=sr, n_mels=128)
