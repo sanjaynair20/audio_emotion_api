@@ -10,8 +10,8 @@ import logging
 app = Flask(__name__)
 
 # Load model
-MODEL_PATH = 'model/audio_emotion_model.h5'
-model = load_model(r"H:/INeuron/Datasets/Deep Learning/audio_emotion_api/model/audio_emotion_model.h5")
+MODEL_PATH = os.path.join("model", "audio_emotion_model.h5")
+model = load_model(MODEL_PATH)
 
 
 # Emotion labels
